@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Prosper - Portfolio</title>
+    <!-- Google Font | Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+  <div class="nav__container container">
+    <div class="nav__wrapper">
+      <a href="/" class="nav__logo">&lt;Code<span class="gradient-text">Stackr</span> /&gt;</a>
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__item">
+          <a href="mailto:prosperjohn143@gmail.com" class="nav__link nav__link--contact">Contact</a>
+        </li>
+      </ul>
+      <div class="nav__hamburger" id="hamburger">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </div>
+    </div>
+  </div>
+  <div class="nav__menu-overlay" id="menu-overlay"></div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <div class="hero__heading">
+            <div class="hero__title hero__title--top">
+              <h1>Design.</h1>
+              <h1>Develop.</h1>
+            </div>
+            <div class="hero__title">
+              <h1>Deliver</h1>
+              <h1>Excellence.</h1>
+            </div>
+          </div>
+          <div class="hero__description">
+            <div class="hero__decorative-line"></div>
+            <p class="hero__text">
+              I'm John Prosper, a junior frontend developer crafting responsive,
+              user-friendly websites with clean code and stunning visuals,
+              fueled by attention to detail and a passion for solving problems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Mobile/Tablet Scroll Down CTA -->
+      <div class="scroll-cta" onclick="scrollToNext()">
+        <span class="scroll-cta__text">Scroll</span>
+        <div class="scroll-cta__line"></div>
+        <svg
+          class="scroll-cta__arrow"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M12 5v14M19 12l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <a href="#projects" class="scroll-indicator" id="scrollIndicator">
+      <div class="scroll-indicator__line"></div>
+      <span class="scroll-indicator__text">SCROLL</span>
+      <i data-lucide="chevron-down" class="scroll-indicator__arrow"></i>
+    </a>
+
+    <!-- Temporary next section for scroll demonstration -->
+    <section
+      id="projects"
+      style="
+        height: 100vh;
+        background: #131212;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+      "
+    >
+      <h2>Projects Section</h2>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
