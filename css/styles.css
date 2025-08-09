@@ -290,7 +290,7 @@ h3 {
   position: relative;
   overflow: hidden;
   background: var(--color-extra);
-  padding: clamp(6rem, 15vw, 12rem) 0 var(--space-xl) 0;
+  padding: 14rem 0 var(--space-xl) 0;
   transition: padding-bottom 0.6s cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
@@ -344,7 +344,7 @@ h3 {
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  padding: 0 var(--space-lg);
+  padding: 0 var(--space-md);
 }
 
 .hero__content {
@@ -367,14 +367,14 @@ h3 {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(0.5rem, 2vw, 1rem);
+  gap: clamp(1rem, 2.6vw, 1.6rem);
   animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   opacity: 0;
   transform: translateY(30px);
 }
 
 .hero__title h1 {
-  font-size: clamp(2.125rem, 8vw, 8rem);
+  font-size: clamp(2.3rem, 8.5vw, 10rem);
   margin: 0;
 }
 
@@ -851,7 +851,7 @@ h3 {
 
   /* Hero  */
   .hero {
-    padding: clamp(7rem, 15vh, 9rem) 0 clamp(3.5rem, 7vh, 5.5rem) 0;
+    padding: clamp(2.5rem, 5vh, 3.5rem) 0 clamp(2rem, 4vh, 3rem) 0;
   }
 
   .hero__container {
@@ -911,7 +911,7 @@ h3 {
   }
 
   .hero {
-    padding: clamp(6rem, 12vh, 8rem) 0 clamp(3rem, 6vh, 5rem) 0;
+    padding: clamp(2rem, 4vh, 3rem) 0 clamp(1.75rem, 3.5vh, 2.5rem) 0;
   }
 
   .hero__container {
@@ -956,7 +956,7 @@ h3 {
 /* Mobile - 500px and below */
 @media (max-width: 500px) {
   .hero {
-    padding: clamp(5rem, 10vh, 7rem) 0 clamp(2.5rem, 5vh, 4.5rem) 0;
+    padding: clamp(2rem, 4vh, 3rem) 0 clamp(1.75rem, 3.5vh, 2.5rem) 0;
   }
 
   .hero__container {
@@ -1001,7 +1001,7 @@ h3 {
 /* Extra Small Mobile - 400px and below */
 @media (max-width: 400px) {
   .hero {
-    padding: clamp(4rem, 8vh, 6rem) 0 clamp(2rem, 4vh, 4rem) 0;
+    padding: clamp(1rem, 2.5vh, 2rem) 0 clamp(1rem, 2.5vh, 1.5rem) 0;
   }
 
   .hero__container {
