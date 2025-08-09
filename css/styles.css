@@ -819,8 +819,8 @@ h3 {
     background: linear-gradient(
       135deg,
       var(--brand-orange) 0%,
-      #ff8555 50%,
-      #ffb347 100%
+      #f86329 50%,
+      #f6a637 100%
     );
     backdrop-filter: blur(10px);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
