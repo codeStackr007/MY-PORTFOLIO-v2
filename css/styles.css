@@ -833,6 +833,12 @@ h3 {
 
   .nav__link--contact:hover {
     border-color: var(--brand-orange);
+    background: linear-gradient(
+      135deg,
+      var(--brand-orange) 0%,
+      #ff8555 50%,
+      #ffb347 100%
+    );
     color: white;
     transform: translateY(-1px);
     box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
