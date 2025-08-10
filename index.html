@@ -25,7 +25,7 @@
     <div class="nav__wrapper">
       <a href="/" class="nav__logo">&lt;<span class="logo-code">Code</span><span class="gradient-text">Stackr</span> /&gt;</a>
       <ul class="nav__menu" id="nav-menu">
-        <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
         <li class="nav__item"><a href="#" class="nav__link">About</a></li>
         <li class="nav__item">
           <a href="mailto:prosperjohn143@gmail.com" class="nav__link nav__link--contact">Contact</a>
@@ -90,22 +90,184 @@
       <i data-lucide="chevron-down" class="scroll-indicator__arrow"></i>
     </a>
 
-    <!-- Temporary next section for scroll demonstration -->
-    <section
-      id="projects"
-      style="
-        height: 100vh;
-        background: #131212;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 2rem;
-      "
-    >
-      <h2>Projects Section</h2>
-    </section>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container projects__container">
+            <header class="projects__header">
+                <h2 class="projects__title">Featured Projects</h2>
+                <div class="decorative__line"></div>
+                <p class="projects__description body-large">
+                    A collection of my latest web development projects showcasing modern design and functionality
+                </p>
+            </header>
 
+            <!-- <div class="projects__grid" role="list" aria-label="Project portfolio">
+                <article class="project-card" role="listitem">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Age Calculator Application Interface">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">
+                            Age Calculator
+                        </h3>
+                        <p class="project-card__description">
+                            A fully responsive and interactive age calculator application built with modern JavaScript and clean UI design principles.
+                        </p>
+                        <div class="project-card__tech" role="list" aria-label="Technologies used">
+                            <span class="project-card__tech-tag" role="listitem">JavaScript</span>
+                            <span class="project-card__tech-tag" role="listitem">HTML5</span>
+                            <span class="project-card__tech-tag" role="listitem">CSS3</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a 
+                                href="#" 
+                                class="project-card__link project-card__link--primary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View Age Calculator live demo"
+                            >
+                                View Live
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a 
+                                href="#" 
+                                class="project-card__link project-card__link--secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View Age Calculator source code on GitHub"
+                            >
+                                GitHub
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" role="listitem">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="E-commerce Dashboard Interface">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">
+                            E-commerce Dashboard
+                        </h3>
+                        <p class="project-card__description">
+                            A comprehensive admin dashboard for e-commerce management with real-time analytics and inventory tracking.
+                        </p>
+                        <div class="project-card__tech" role="list" aria-label="Technologies used">
+                            <span class="project-card__tech-tag" role="listitem">React</span>
+                            <span class="project-card__tech-tag" role="listitem">TypeScript</span>
+                            <span class="project-card__tech-tag" role="listitem">Chart.js</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a 
+                                href="#" 
+                                class="project-card__link project-card__link--primary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View E-commerce Dashboard live demo"
+                            >
+                                View Live
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a 
+                                href="#" 
+                                class="project-card__link project-card__link--secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View E-commerce Dashboard source code on GitHub"
+                            >
+                                GitHub
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" role="listitem">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop" alt="Weather Application Interface">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">
+                            Weather App
+                        </h3>
+                        <p class="project-card__description">
+                            Real-time weather application with location-based forecasts and beautiful animated weather icons.
+                        </p>
+                        <div class="project-card__tech" role="list" aria-label="Technologies used">
+                            <span class="project-card__tech-tag" role="listitem">Vue.js</span>
+                            <span class="project-card__tech-tag" role="listitem">API Integration</span>
+                            <span class="project-card__tech-tag" role="listitem">SCSS</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a 
+                                href="#" 
+                                class="project-card__link project-card__link--primary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View Weather App live demo"
+                            >
+                                View Live
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a 
+                                href="#" 
+                                class="project-card__link project-card__link--secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View Weather App source code on GitHub"
+                            >
+                                GitHub
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" role="listitem">
+                    <div class="project-card__image">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop" alt="Car Rental Platform Interface">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">
+                            Car Rental Platform
+                        </h3>
+                        <p class="project-card__description">
+                            A fully responsive and interactive car rental service landing page built with React and Tailwind CSS featuring modern animations.
+                        </p>
+                        <div class="project-card__tech" role="list" aria-label="Technologies used">
+                            <span class="project-card__tech-tag" role="listitem">React</span>
+                            <span class="project-card__tech-tag" role="listitem">Tailwind CSS</span>
+                            <span class="project-card__tech-tag" role="listitem">Framer Motion</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a 
+                                href="#" 
+                                class="project-card__link project-card__link--primary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View Car Rental Platform live demo"
+                            >
+                                View Live
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a 
+                                href="#" 
+                                class="project-card__link project-card__link--secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View Car Rental Platform source code on GitHub"
+                            >
+                                GitHub
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div> -->
+    </section> 
     <script src="js/script.js"></script>
   </body>
 </html>
