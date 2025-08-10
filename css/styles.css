@@ -94,7 +94,7 @@ h3 {
   width: 100%;
   max-width: var(--container-xl);
   margin: 0 auto;
-  padding: 0 var(--space-sm);
+  padding: 0 var(--space-lg);
 }
 
 .body-large {
@@ -118,7 +118,7 @@ h3 {
   left: 0;
   right: 0;
   z-index: 1001;
-  padding: clamp(1rem, 3vw, 1.25rem) 0;
+  padding: clamp(1rem, 3vw, 1.25rem);
   background: rgba(26, 26, 26, 0.9);
   backdrop-filter: blur(20px) saturate(180%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
