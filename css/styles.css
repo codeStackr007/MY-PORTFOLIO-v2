@@ -846,7 +846,7 @@ h3 {
 }
 
 .projects__description {
-  font-size: clamp(1rem, 3.5vw, 1.4rem);
+  font-size: clamp(0.95rem, 3.5vw, 1.4rem);
   color: var(--grey-400);
   max-width: 600px;
   margin: 0 auto;
@@ -1147,7 +1147,7 @@ h3 {
   }
 
   .hero__text {
-    font-size: clamp(0.97rem, 3vw, 1.23rem);
+    font-size: clamp(0.99rem, 3.3vw, 1.25rem);
     margin: clamp(0.75rem, 1.5vw, 1rem) auto clamp(0.5rem, 1vw, 0.75rem) auto;
     max-width: clamp(300px, 92vw, 450px);
     line-height: 1.5;
