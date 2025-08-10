@@ -1074,7 +1074,7 @@ h3 {
   }
 
   .hero__text {
-    font-size: clamp(1rem, 3.2vw, 1.25rem);
+    font-size: clamp(1rem, 3.2vw, 1.32rem);
     margin: clamp(1rem, 2vw, 1.25rem) auto clamp(0.75rem, 1.5vw, 1rem) auto;
     max-width: clamp(350px, 88vw, 600px);
     line-height: 1.55;
@@ -1147,7 +1147,7 @@ h3 {
   }
 
   .hero__text {
-    font-size: clamp(0.95rem, 3vw, 1.125rem);
+    font-size: clamp(0.97rem, 3vw, 1.23rem);
     margin: clamp(0.75rem, 1.5vw, 1rem) auto clamp(0.5rem, 1vw, 0.75rem) auto;
     max-width: clamp(300px, 92vw, 450px);
     line-height: 1.5;
