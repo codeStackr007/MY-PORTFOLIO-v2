@@ -846,7 +846,7 @@ h3 {
 }
 
 .projects__description {
-  font-size: var(--text-body-large);
+  font-size: clamp(1rem, 3.5vw, 1.4rem);
   color: var(--grey-400);
   max-width: 600px;
   margin: 0 auto;
