@@ -13,7 +13,7 @@
     />
 
     <!-- StyleSheet -->
-    <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -23,7 +23,7 @@
     <nav class="nav">
   <div class="nav__container container">
     <div class="nav__wrapper">
-      <a href="/" class="nav__logo">&lt;Code<span class="gradient-text">Stackr</span> /&gt;</a>
+      <a href="/" class="nav__logo">&lt;<span class="logo-code">Code</span><span class="gradient-text">Stackr</span> /&gt;</a>
       <ul class="nav__menu" id="nav-menu">
         <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
         <li class="nav__item"><a href="#" class="nav__link">About</a></li>
@@ -63,11 +63,19 @@
               fueled by attention to detail and a passion for solving problems.
             </p>
           </div>
+          
+          <!-- Download CV Button (Mobile/Tablet Only) -->
+          <div class="hero__cta">
+            <a href="#" class="btn btn--primary" onclick="downloadCV()">
+              Download CV
+              <i data-lucide="download" class="btn__arrow"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-
-      <!-- Mobile/Tablet Scroll Down CTA -->
+       
+    <!-- Mobile/Tablet Scroll Down CTA -->
       <div class="scroll-cta" onclick="scrollToNext()">
         <span class="scroll-cta__text">Scroll</span>
         <div class="scroll-cta__line"></div>

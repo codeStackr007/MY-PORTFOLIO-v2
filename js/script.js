@@ -98,3 +98,10 @@ if (scrollIndicator) {
     scrollToNext();
   });
 }
+
+// Download CV function
+function downloadCV() {
+  // Add your CV download logic here
+  // For now, just show an alert
+  alert("CV download would start here - please add your CV file link!");
+}
