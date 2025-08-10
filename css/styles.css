@@ -156,13 +156,12 @@ h3 {
   opacity: 0.8;
 }
 
-/* Make the < and /> white in the logo */
 .nav__logo {
-  color: white; /* This makes the < and /> white */
+  color: white;
 }
 
 .nav__logo .logo-code {
-  color: var(--brand-orange); /* Code text in orange */
+  color: var(--brand-orange);
 }
 
 /* Style for the gradient text within the logo */
@@ -724,6 +723,46 @@ h3 {
   }
 }
 
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid var(--brand-orange);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.3);
+}
+
+.nav__link:focus-visible {
+  color: var(--grey-100);
+  border-radius: 4px;
+}
+
+.btn:focus-visible,
+.nav__link--contact:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.nav__hamburger:focus-visible {
+  outline: 2px solid var(--brand-orange);
+  border-radius: 4px;
+}
+
+/* User Preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --brand-orange: #ff4500;
+  }
+  .nav {
+    border-bottom: 1px solid var(--grey-100);
+  }
+}
+
 @media (max-width: 992px) {
   .nav {
     padding: var(--space-sm);
@@ -815,7 +854,7 @@ h3 {
     cursor: pointer;
   }
 
-  /* Hero - Reduced top spacing for mobile/tablet */
+  /* Hero  */
   .hero {
     padding: clamp(5rem, 10vh, 7rem) 0 clamp(3.5rem, 7vh, 5.5rem) 0;
   }
@@ -879,7 +918,7 @@ h3 {
     padding: 0 0 2rem 0;
   }
 
-  /* Hero - Further reduced spacing for tablet */
+  /* Hero  */
   .hero {
     padding: clamp(4.5rem, 9vh, 6.5rem) 0 clamp(3rem, 6vh, 5rem) 0;
   }
@@ -926,7 +965,7 @@ h3 {
 }
 
 @media (max-width: 500px) {
-  /* Hero - Further reduced spacing for mobile */
+  /* Hero */
   .hero {
     padding: clamp(4rem, 8vh, 5.5rem) 0 clamp(2.5rem, 5vh, 4.5rem) 0;
   }
