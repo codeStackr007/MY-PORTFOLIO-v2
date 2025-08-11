@@ -1303,10 +1303,25 @@ h3 {
     max-height: clamp(300px, 35vw, 400px);
   }
 
+  .project__card--content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .project__card--description {
+    margin-bottom: var(--space-md);
+  }
+
+  .project__card--tech {
+    justify-content: center;
+    margin-bottom: var(--space-sm);
+  }
+
   .project__card--links {
     flex-direction: column;
-    gap: var(--gap-md);
+    gap: var(--space-sm);
     justify-content: center;
+    width: 100%;
   }
 
   .project__card--link {
@@ -1397,7 +1412,7 @@ h3 {
   }
 
   .project__card--title {
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
   }
 
   .project__card--description {
@@ -1489,7 +1504,7 @@ h3 {
   }
 
   .project__card--links {
-    gap: var(--gap-md);
+    gap: var(--space-sm);
   }
 
   .project__card--link {
