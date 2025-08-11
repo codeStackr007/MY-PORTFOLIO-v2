@@ -20,18 +20,6 @@ if (window.location.hash) {
 }
 window.scrollTo({ top: 0, behavior: "instant" });
 
-// Force hero animations on load/reload
-window.addEventListener("load", () => {
-  const heroElements = document.querySelectorAll(
-    ".hero--content, .hero__title, .hero__decorative-line, .hero__text, .hero__cta"
-  );
-  heroElements.forEach((el) => {
-    el.classList.remove("animate-in"); // Reset
-    el.offsetHeight; // Trigger reflow
-    el.classList.add("animate-in"); // Immediately re-apply
-  });
-});
-
 // Mobile menu elements
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("nav-menu");
@@ -120,7 +108,7 @@ function downloadCV() {
 
 // Scroll animations for hero and projects sections
 const animateElements = document.querySelectorAll(
-  ".hero--content, .hero__title, .hero__decorative-line, .hero__text, .hero__cta, .projects__title, .decorative__line, .projects__description, .project__card"
+  ".hero--content, .hero__title, .hero__decorative-line, .hero__text, .hero__cta, .scroll-indicator, .scroll-cta, .projects__title, .projects__description, .project__card"
 );
 
 const observer = new IntersectionObserver(
@@ -134,7 +122,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.1, // Trigger when 10% visible
+    threshold: 0.2, // Trigger when 20% visible
     rootMargin: "0px 0px -50px 0px", // Slight offset for smoothness
   }
 );

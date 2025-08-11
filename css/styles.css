@@ -764,7 +764,7 @@ h3 {
   margin-top: var(--space-xl);
 }
 
-/* Enhanced Project Card - More Modern Design */
+/* Project Card */
 .project__card {
   display: flex;
   background: rgba(26, 26, 26, 0.8);
@@ -1261,7 +1261,7 @@ h3 {
   }
 
   .projects__grid {
-    margin-top: var(--space-lg);
+    margin: var(--space-2xl) 0;
   }
 
   .project__card {
@@ -1360,7 +1360,7 @@ h3 {
 
   .projects__grid {
     gap: var(--space-md);
-    margin-top: var(--space-md);
+    margin: var(--space-2xl) 0;
   }
 
   .project__card {
@@ -1442,7 +1442,7 @@ h3 {
   }
 
   .projects__grid {
-    margin-top: var(--space-sm);
+    margin: var(--space-2xl) 0;
   }
 
   .project__card {
