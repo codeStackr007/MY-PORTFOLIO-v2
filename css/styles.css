@@ -1261,7 +1261,7 @@ h3 {
 
   .scroll-cta {
     display: flex;
-    bottom: clamp(2rem, 5vh, 4rem);
+    bottom: clamp(2rem, 11vh, 4rem);
   }
 
   /* Projects Section */
@@ -1274,7 +1274,7 @@ h3 {
   }
 
   .projects__header {
-    margin-bottom: var(--space-xl);
+    margin: 4rem 0;
   }
 
   .projects__grid {
@@ -1356,7 +1356,7 @@ h3 {
   }
 
   .scroll-cta {
-    bottom: clamp(2rem, 5vh, 4rem);
+    bottom: clamp(2rem, 9vh, 4rem);
   }
 
   .scroll-cta__line {
@@ -1382,7 +1382,7 @@ h3 {
   }
 
   .projects__header {
-    margin-bottom: var(--space-xl);
+    /* margin-bottom: var(--space-xl); */
   }
 
   .project__card {
@@ -1447,7 +1447,7 @@ h3 {
   }
 
   .scroll-cta {
-    bottom: clamp(2rem, 5vh, 4rem);
+    bottom: clamp(2rem, 7vh, 4rem);
   }
 
   .scroll-cta__text {
@@ -1460,7 +1460,7 @@ h3 {
 
   /* Projects Section */
   .projects__header {
-    margin-bottom: var(--space-md);
+    /* margin-bottom: var(--space-md); */
   }
 
   .projects__grid {
@@ -1497,12 +1497,4 @@ h3 {
     font-size: clamp(0.75rem, 1.6vw, 0.85rem);
     border-radius: 50px;
   }
-}
-
-/* Apply uniform hover to buttons */
-.btn--primary,
-.nav__link--contact,
-.project__card--link,
-.project__card--link--primary {
-  /* Inherit hover-uniform styles */
 }
