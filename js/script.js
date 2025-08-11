@@ -1,71 +1,76 @@
 "use strict";
 
-//  Initialize Lucide Icons:
-    lucide.createIcons();
+// Initialize Lucide icons
+lucide.createIcons();
 
-  // Get nav height and save it as CSS variable for mobile menu
-  const nav = document.querySelector(".nav");
-  if (nav) {
-    const navHeight = nav.offsetHeight;
-    document.documentElement.style.setProperty(
-      "--nav-height",
-      `${navHeight}px`
-    );
-  }
+// Set nav height as CSS variable
+const nav = document.querySelector(".nav");
+if (nav) {
+  const navHeight = nav.offsetHeight;
+  document.documentElement.style.setProperty("--nav-height", `${navHeight}px`);
+}
 
-  // Always start at top of page, not at any anchor links
-  if (window.location.hash) {
-    history.replaceState(null, null, window.location.pathname);
-  }
-  window.scrollTo({ top: 0, behavior: "instant" });
-});
+// Scroll to top, remove hash
+if (window.location.hash) {
+  history.replaceState(null, null, window.location.pathname);
+}
+window.scrollTo({ top: 0, behavior: "instant" });
 
-// Mobile menu stuff - hamburger, overlay, and menu links
+// Mobile menu elements
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("nav-menu");
 const overlay = document.getElementById("menu-overlay");
 
 if (hamburger && menu && overlay) {
-  // When hamburger is clicked, open or close menu
-  hamburger.addEventListener("click", () => {
-    const isOpening = !hamburger.classList.contains("active");
+  // Open menu
+  function openMenu() {
+    hamburger.classList.add("active");
+    menu.classList.add("active");
+    overlay.classList.add("active");
+    document.body.classList.add("no-scroll");
+    // Add outside click listener after delay
+    setTimeout(() => {
+      document.addEventListener("click", handleOutsideClick);
+    }, 0);
+  }
 
-    if (isOpening) {
-      hamburger.classList.add("active");
-      menu.classList.add("active");
-      overlay.classList.add("active");
-      document.body.classList.add("no-scroll");
-    } else {
-      hamburger.classList.remove("active");
-      menu.classList.remove("active");
-      overlay.classList.remove("active");
-      document.body.classList.remove("no-scroll");
-    }
-  });
-
-  // When overlay is clicked (anywhere outside menu), close it
-  // NOTE: Removed the e.target check - was causing bugs
-  overlay.addEventListener("click", () => {
+  // Close menu
+  function closeMenu() {
     hamburger.classList.remove("active");
     menu.classList.remove("active");
     overlay.classList.remove("active");
     document.body.classList.remove("no-scroll");
+    document.removeEventListener("click", handleOutsideClick);
+  }
+
+  // Handle outside clicks
+  function handleOutsideClick(e) {
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      closeMenu();
+    }
+  }
+
+  // Toggle menu on hamburger click
+  hamburger.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent click from bubbling to document
+    const isOpening = !hamburger.classList.contains("active");
+    if (isOpening) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
   });
 
-  // When any menu link is clicked, close the menu
+  // Close menu on link clicks
   const menuLinks = document.querySelectorAll(".nav__link");
   menuLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      hamburger.classList.remove("active");
-      menu.classList.remove("active");
-      overlay.classList.remove("active");
-      document.body.classList.remove("no-scroll");
+      closeMenu();
     });
   });
 }
 
-// Make nav background darker when scrolling down
-const nav = document.querySelector(".nav");
+// Add scrolled class to nav
 if (nav) {
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
@@ -76,7 +81,7 @@ if (nav) {
   });
 }
 
-// Scroll down to projects section smoothly
+// Scroll to projects section
 function scrollToNext() {
   const projectsSection = document.getElementById("projects");
   if (projectsSection) {
@@ -86,7 +91,7 @@ function scrollToNext() {
   }
 }
 
-// Make the scroll indicator on the right clickable
+// Make scroll indicator clickable
 const scrollIndicator = document.getElementById("scrollIndicator");
 if (scrollIndicator) {
   scrollIndicator.addEventListener("click", (e) => {
@@ -95,9 +100,7 @@ if (scrollIndicator) {
   });
 }
 
-// Download CV function
+// Download CV
 function downloadCV() {
-  // Add your CV download logic here
-  // For now, just show an alert
   alert("CV download would start here - please add your CV file link!");
 }
