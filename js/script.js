@@ -1,11 +1,7 @@
 "use strict";
 
-// Wait for page to load before doing anything...
-document.addEventListener("DOMContentLoaded", () => {
-  // Start up the icons
-  if (typeof lucide !== "undefined") {
+//  Initialize Lucide Icons:
     lucide.createIcons();
-  }
 
   // Get nav height and save it as CSS variable for mobile menu
   const nav = document.querySelector(".nav");
