@@ -22,7 +22,6 @@
   --grey-700: #495057;
   --grey-800: #343a40;
   --grey-900: #212529;
-  --grey-1000: #000000;
 
   /* Typography */
   --font-display: "Inter", sans-serif;
@@ -31,7 +30,6 @@
   --text-h1: clamp(2.5rem, 8vw, 4rem);
   --text-h2: clamp(2rem, 6vw, 3rem);
   --text-h3: clamp(1.5rem, 4vw, 2rem);
-  --text-h4: clamp(1.25rem, 3vw, 1.75rem);
   --text-body-large: clamp(1.125rem, 2.5vw, 1.25rem);
   --text-body-medium: clamp(0.875rem, 2vw, 1rem);
   --text-button: clamp(0.875rem, 2vw, 1rem);
