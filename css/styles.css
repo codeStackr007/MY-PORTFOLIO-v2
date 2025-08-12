@@ -198,7 +198,7 @@ h3 {
 .hover-uniform:hover,
 .project__card:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: var(--shadow-glow);
+  /* box-shadow: var(--shadow-glow); */
   border-color: var(--brand-orange);
 }
 
@@ -485,7 +485,7 @@ h3 {
   font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--grey-400);
   line-height: 1.6;
-  max-width: clamp(400px, 70vw, 630px);
+  max-width: clamp(400px, 70vw, 640px);
   margin-top: var(--space-md);
   font-weight: 400;
   animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.6s forwards;
