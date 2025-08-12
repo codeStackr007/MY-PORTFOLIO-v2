@@ -988,7 +988,7 @@ h3 {
 }
 
 .project__card--link--secondary {
-  border: 2px solid var(--grey-600);
+  border: 1px solid var(--grey-600);
   background: rgba(255, 255, 255, 0.03);
 }
 
