@@ -1405,7 +1405,7 @@ h3 {
   }
 
   .project__card--description {
-    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-size: clamp(0.85rem, 2vw, 1rem);
   }
 
   .project__card--tech {
@@ -1444,7 +1444,7 @@ h3 {
   }
 
   .hero__text {
-    font-size: clamp(0.99rem, 3.3vw, 1.25rem);
+    font-size: clamp(0.87rem, 3.3vw, 1.25rem);
     margin: clamp(0.75rem, 1.5vw, 1rem) auto clamp(0.5rem, 1vw, 0.75rem) auto;
     max-width: clamp(300px, 92vw, 450px);
     line-height: 1.5;
