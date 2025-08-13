@@ -1327,7 +1327,7 @@ h3 {
   }
 
   .project__card--description {
-    font-size: clamp(0.85rem, 2vw, 1rem);
+    font-size: clamp(0.79rem, 2vw, 1rem);
   }
 
   .project__card--tech {
